@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: FERoc
+subtitle: 从这里启航，走起...
+description: Roc的博客
+author: Roc
+language: zh
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://rochzp.github.io
+url: http://blog.w3croc.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
