@@ -175,7 +175,7 @@ h6 {
 a {
   text-decoration: none;
   outline-width: 0;
-  color: #4094c7;
+  color: #279c7a;
   outline: none;
 }
 .alignleft {
@@ -3184,7 +3184,7 @@ color
 }
 .article-entry pre,
 .article-entry .highlight {
-  background: #002b36;
+  background: #333;
   margin: 10px 0;
   padding: 10px 10px;
   overflow: auto;
@@ -3220,13 +3220,13 @@ color
   border: none;
 }
 .article-entry pre {
-  color: #fff;
+  color: #32d204;
 }
 .article-entry pre code {
   background: none;
   text-shadow: none;
   padding: 0;
-  color: #fff;
+  color: #32d204;
 }
 .article-entry p code {
   margin: 0 3px;
@@ -3359,7 +3359,7 @@ color
 .article-entry .highlight::before {
   content: attr(data-lang) " code";
   display: block;
-  background-color: #0083a0;
+  background-color: #666;
   margin: 0 -16px 16px -16px;
   padding: 8px 16px;
   color: #efefef;
@@ -3430,7 +3430,7 @@ color
   border-style: solid;
   border-color: #ddd;
   border-width: 1px 0;
-  background: #002b36;
+  background: #333;
   padding: 15px 20px 15px 0;
 }
 .article-entry .gist .gist-file {
@@ -3456,7 +3456,7 @@ color
   border: none;
 }
 .article-entry .gist .gist-file .gist-meta {
-  background: #002b36;
+  background: #333;
   color: highlight-comment;
   font: 0.85em "Lucida Grande", Verdana, "Helvetica Neue", Arial, sans-serif;
   text-shadow: 0 0;
@@ -3504,7 +3504,7 @@ pre .class .params {
 pre .params,
 pre .function,
 pre .css .value {
-  color: #fff;
+  color: #32d204;
 }
 pre .css ~ * .tag,
 pre .at_rule,
@@ -3756,7 +3756,7 @@ pre .link_url {
 }
 .switch-btn .tips-box .tips-inner {
   padding: 5px 8px 4px 8px;
-  background-color: #000;
+  background-color: rgba(0,0,0,0.8);
   color: #fff;
   width: 80px;
   text-align: center;
