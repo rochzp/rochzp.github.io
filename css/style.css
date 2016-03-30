@@ -649,6 +649,8 @@ code {
   margin: 10px auto 20px;
   width: 128px;
   height: 128px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
 }
 #profile .inner .base-info #name,
 #profile .inner .base-info #title,
