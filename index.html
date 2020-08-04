@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-jQuery-Validate-验证集合" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/29/jQuery-Validate-%E9%AA%8C%E8%AF%81%E9%9B%86%E5%90%88/" class="article-date">
+  <time datetime="2016-03-29T08:00:13.000Z" itemprop="datePublished">2016-03-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Front-End/">Front-End</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/29/jQuery-Validate-%E9%AA%8C%E8%AF%81%E9%9B%86%E5%90%88/">jQuery Validate 验证集合</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>jQuery Validate 使用教程: <a target="_blank" rel="noopener" href="http://www.runoob.com/jquery/jquery-plugin-validate.html">http://www.runoob.com/jquery/jquery-plugin-validate.html</a></p>
+<h3 id="jQuery-Validate-验证方法的收集："><a href="#jQuery-Validate-验证方法的收集：" class="headerlink" title="jQuery Validate 验证方法的收集："></a><a target="_blank" rel="noopener" href="http://jqueryvalidation.org/">jQuery Validate</a> 验证方法的收集：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">     <span class="comment">//密码组成验证，一个大写，一个小写，一个符号</span></span><br><span class="line">     jQuery.validator.addMethod(<span class="string">&quot;regexPassword&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;  </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^(?=^.&#123;8,&#125;$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/</span>.test(value);  </span><br><span class="line">     &#125;, <span class="string">&quot;一个大写，一个小写，一个符号&quot;</span>);</span><br><span class="line">    <span class="comment">// 判断整数value是否等于0 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isIntEqZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseInt</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value==<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;整数必须为0&quot;</span>); </span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 判断整数value是否大于0</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isIntGtZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseInt</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value&gt;<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;整数必须大于0&quot;</span>); </span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 判断整数value是否大于或等于0</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isIntGteZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseInt</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value&gt;=<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;整数必须大于或等于0&quot;</span>);   </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断整数value是否不等于0 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isIntNEqZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseInt</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value!=<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;整数必须不等于0&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断整数value是否小于0 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isIntLtZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseInt</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value&lt;<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;整数必须小于0&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断整数value是否小于或等于0 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isIntLteZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseInt</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value&lt;=<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;整数必须小于或等于0&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断浮点数value是否等于0 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isFloatEqZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseFloat</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value==<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;浮点数必须为0&quot;</span>); </span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 判断浮点数value是否大于0</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isFloatGtZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseFloat</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value&gt;<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;浮点数必须大于0&quot;</span>); </span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 判断浮点数value是否大于或等于0</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isFloatGteZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseFloat</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value&gt;=<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;浮点数必须大于或等于0&quot;</span>);   </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断浮点数value是否不等于0 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isFloatNEqZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseFloat</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value!=<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;浮点数必须不等于0&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断浮点数value是否小于0 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isFloatLtZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseFloat</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value&lt;<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;浮点数必须小于0&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断浮点数value是否小于或等于0 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isFloatLteZero&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">         value=<span class="built_in">parseFloat</span>(value);      </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || value&lt;=<span class="number">0</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;浮点数必须小于或等于0&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断浮点型  </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isFloat&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[-\+]?\d+(\.\d+)?$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;只能包含数字、小数点等字符&quot;</span>); </span><br><span class="line">     </span><br><span class="line">    <span class="comment">// 匹配integer</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isInteger&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || (<span class="regexp">/^[-\+]?\d+$/</span>.test(value) &amp;&amp; <span class="built_in">parseInt</span>(value)&gt;=<span class="number">0</span>);       </span><br><span class="line">    &#125;, <span class="string">&quot;匹配integer&quot;</span>);  </span><br><span class="line">     </span><br><span class="line">    <span class="comment">// 判断数值类型，包括整数和浮点数</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isNumber&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[-\+]?\d+$/</span>.test(value) || <span class="regexp">/^[-\+]?\d+(\.\d+)?$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;匹配数值类型，包括整数和浮点数&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 只能输入[0-9]数字</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isDigits&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^\d+$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;只能输入0-9数字&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断中文字符 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isChinese&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[\u0391-\uFFE5]+$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;只能包含中文字符。&quot;</span>);   </span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 判断英文字符 </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isEnglish&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[A-Za-z]+$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;只能包含英文字符。&quot;</span>);   </span><br><span class="line"> </span><br><span class="line">     <span class="comment">// 手机号码验证    </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isMobile&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;    </span><br><span class="line">      <span class="keyword">var</span> length = value.length;    </span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || (length == <span class="number">11</span> &amp;&amp; <span class="regexp">/^(((13[0-9]&#123;1&#125;)|(15[0-9]&#123;1&#125;)|(18[0-9]&#123;1&#125;))+\d&#123;8&#125;)$/</span>.test(value));    </span><br><span class="line">    &#125;, <span class="string">&quot;请正确填写您的手机号码。&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 电话号码验证    </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isPhone&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;    </span><br><span class="line">      <span class="keyword">var</span> tel = <span class="regexp">/^(\d&#123;3,4&#125;-?)?\d&#123;7,9&#125;$/g</span>;    </span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || (tel.test(value));    </span><br><span class="line">    &#125;, <span class="string">&quot;请正确填写您的电话号码。&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 联系电话(手机/电话皆可)验证   </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isTel&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value,element</span>) </span>&#123;   </span><br><span class="line">        <span class="keyword">var</span> length = value.length;   </span><br><span class="line">        <span class="keyword">var</span> mobile = <span class="regexp">/^(((13[0-9]&#123;1&#125;)|(15[0-9]&#123;1&#125;)|(18[0-9]&#123;1&#125;))+\d&#123;8&#125;)$/</span>;   </span><br><span class="line">        <span class="keyword">var</span> tel = <span class="regexp">/^(\d&#123;3,4&#125;-?)?\d&#123;7,9&#125;$/g</span>;       </span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || tel.test(value) || (length==<span class="number">11</span> &amp;&amp; mobile.test(value));   </span><br><span class="line">    &#125;, <span class="string">&quot;请正确填写您的联系方式&quot;</span>); </span><br><span class="line"> </span><br><span class="line">     <span class="comment">// 匹配qq      </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isQq&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[1-9]\d&#123;4,12&#125;$/</span>;       </span><br><span class="line">    &#125;, <span class="string">&quot;匹配QQ&quot;</span>);   </span><br><span class="line"> </span><br><span class="line">     <span class="comment">// 邮政编码验证    </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isZipCode&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;    </span><br><span class="line">      <span class="keyword">var</span> zip = <span class="regexp">/^[0-9]&#123;6&#125;$/</span>;    </span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || (zip.test(value));    </span><br><span class="line">    &#125;, <span class="string">&quot;请正确填写您的邮政编码。&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 匹配密码，以字母开头，长度在6-12之间，只能包含字符、数字和下划线。      </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isPwd&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[a-zA-Z]\\w&#123;6,12&#125;$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;以字母开头，长度在6-12之间，只能包含字符、数字和下划线。&quot;</span>);  </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 身份证号码验证</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isIdCardNo&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123; </span><br><span class="line">      <span class="comment">//var idCard = /^(\d&#123;6&#125;)()?(\d&#123;4&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;)(\d&#123;3&#125;)(\w)$/;   </span></span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || isIdCardNo(value);    </span><br><span class="line">    &#125;, <span class="string">&quot;请输入正确的身份证号码。&quot;</span>); </span><br><span class="line"></span><br><span class="line">    <span class="comment">// IP地址验证   </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;ip&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;    </span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^(([1-9]|([1-9]\d)|(1\d\d)|(2([0-4]\d|5[0-5])))\.)(([1-9]|([1-9]\d)|(1\d\d)|(2([0-4]\d|5[0-5])))\.)&#123;2&#125;([1-9]|([1-9]\d)|(1\d\d)|(2([0-4]\d|5[0-5])))$/</span>.test(value);    </span><br><span class="line">    &#125;, <span class="string">&quot;请填写正确的IP地址。&quot;</span>);</span><br><span class="line">   </span><br><span class="line">    <span class="comment">// 字符验证，只能包含中文、英文、数字、下划线等字符。    </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;stringCheck&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[a-zA-Z0-9\u4e00-\u9fa5-_]+$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;只能包含中文、英文、数字、下划线等字符&quot;</span>);   </span><br><span class="line">   </span><br><span class="line">    <span class="comment">// 匹配english  </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isEnglish&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[A-Za-z]+$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;匹配english&quot;</span>);   </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 匹配汉字  </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isChinese&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[\u4e00-\u9fa5]+$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;匹配汉字&quot;</span>);   </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 匹配中文(包括汉字和字符) </span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isChineseChar&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[\u0391-\uFFE5]+$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;匹配中文(包括汉字和字符) &quot;</span>); </span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 判断是否为合法字符(a-zA-Z0-9-_)</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isRightfulString&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;       </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || <span class="regexp">/^[A-Za-z0-9_-]+$/</span>.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;判断是否为合法字符(a-zA-Z0-9-_)&quot;</span>);   </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断是否包含中英文特殊字符，除英文&quot;-_&quot;字符外</span></span><br><span class="line">    jQuery.validator.addMethod(<span class="string">&quot;isContainsSpecialChar&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">value, element</span>) </span>&#123;  </span><br><span class="line">         <span class="keyword">var</span> reg = <span class="built_in">RegExp</span>(<span class="regexp">/[(\ )(\`)(\~)(\!)(\@)(\#)(\$)(\%)(\^)(\&amp;)(\*)(\()(\))(\+)(\=)(\|)(\&#123;)(\&#125;)(\&#x27;)(\:)(\;)(\&#x27;)(&#x27;,)(\[)(\])(\.)(\&lt;)(\&gt;)(\/)(\?)(\~)(\！)(\@)(\#)(\￥)(\%)(\…)(\&amp;)(\*)(\（)(\）)(\—)(\+)(\|)(\&#123;)(\&#125;)(\【)(\】)(\‘)(\；)(\：)(\”)(\“)(\’)(\。)(\，)(\、)(\？)]+/</span>);   </span><br><span class="line">         <span class="keyword">return</span> <span class="built_in">this</span>.optional(element) || !reg.test(value);       </span><br><span class="line">    &#125;, <span class="string">&quot;含有中英文特殊字符&quot;</span>);   </span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">    <span class="comment">//身份证号码的验证规则</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">isIdCardNo</span>(<span class="params">num</span>)</span>&#123; </span><br><span class="line">    　   <span class="comment">//if (isNaN(num)) &#123;alert(&quot;输入的不是数字！&quot;); return false;&#125; </span></span><br><span class="line">    　　 <span class="keyword">var</span> len = num.length, re; </span><br><span class="line">    　　 <span class="keyword">if</span> (len == <span class="number">15</span>) </span><br><span class="line">    　　 re = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="regexp">/^(\d&#123;6&#125;)()?(\d&#123;2&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;)(\w)$/</span>); </span><br><span class="line">    　　 <span class="keyword">else</span> <span class="keyword">if</span> (len == <span class="number">18</span>) </span><br><span class="line">    　　 re = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="regexp">/^(\d&#123;6&#125;)()?(\d&#123;4&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;)(\d&#123;3&#125;)(\w)$/</span>); </span><br><span class="line">    　　 <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">//alert(&quot;输入的数字位数不对。&quot;); </span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125; </span><br><span class="line">    　　 <span class="keyword">var</span> a = num.match(re); </span><br><span class="line">    　　 <span class="keyword">if</span> (a != <span class="literal">null</span>) </span><br><span class="line">    　　 &#123; </span><br><span class="line">    　　 <span class="keyword">if</span> (len==<span class="number">15</span>) </span><br><span class="line">    　　 &#123; </span><br><span class="line">    　　 <span class="keyword">var</span> D = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">&quot;19&quot;</span>+a[<span class="number">3</span>]+<span class="string">&quot;/&quot;</span>+a[<span class="number">4</span>]+<span class="string">&quot;/&quot;</span>+a[<span class="number">5</span>]); </span><br><span class="line">    　　 <span class="keyword">var</span> B = D.getYear()==a[<span class="number">3</span>]&amp;&amp;(D.getMonth()+<span class="number">1</span>)==a[<span class="number">4</span>]&amp;&amp;D.getDate()==a[<span class="number">5</span>]; </span><br><span class="line">    　　 &#125; </span><br><span class="line">    　　 <span class="keyword">else</span> </span><br><span class="line">    　　 &#123; </span><br><span class="line">    　　 <span class="keyword">var</span> D = <span class="keyword">new</span> <span class="built_in">Date</span>(a[<span class="number">3</span>]+<span class="string">&quot;/&quot;</span>+a[<span class="number">4</span>]+<span class="string">&quot;/&quot;</span>+a[<span class="number">5</span>]); </span><br><span class="line">    　　 <span class="keyword">var</span> B = D.getFullYear()==a[<span class="number">3</span>]&amp;&amp;(D.getMonth()+<span class="number">1</span>)==a[<span class="number">4</span>]&amp;&amp;D.getDate()==a[<span class="number">5</span>]; </span><br><span class="line">    　　 &#125; </span><br><span class="line">    　　 <span class="keyword">if</span> (!B) &#123;</span><br><span class="line">            <span class="comment">//alert(&quot;输入的身份证号 &quot;+ a[0] +&quot; 里出生日期不对。&quot;); </span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125; </span><br><span class="line">    　　 &#125; </span><br><span class="line">    　　 <span class="keyword">if</span>(!re.test(num))&#123;</span><br><span class="line">            <span class="comment">//alert(&quot;身份证最后一位只能是数字和字母。&quot;);</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    　　 <span class="keyword">return</span> <span class="literal">true</span>; </span><br><span class="line">    &#125; </span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/29/jQuery-Validate-%E9%AA%8C%E8%AF%81%E9%9B%86%E5%90%88/" data-id="ckdfkvozs0001wdrv1cglctra" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Plugins/" rel="tag">Plugins</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Javascript高阶函数AOP功能" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/29/Javascript%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0AOP%E5%8A%9F%E8%83%BD/" class="article-date">
+  <time datetime="2016-03-29T07:21:26.000Z" itemprop="datePublished">2016-03-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Front-End/">Front-End</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/29/Javascript%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0AOP%E5%8A%9F%E8%83%BD/">Javascript高阶函数AOP功能</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="AOP实现代码"><a href="#AOP实现代码" class="headerlink" title="AOP实现代码"></a>AOP实现代码</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span>.prototype.before = <span class="function"><span class="keyword">function</span>(<span class="params">beforefn</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> _self = <span class="built_in">this</span>; <span class="comment">//保存原函数的引用</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">//返回包含了原函数和新函数的“代理”函数</span></span><br><span class="line">    beforefn.apply( <span class="built_in">this</span>, <span class="built_in">arguments</span>); <span class="comment">//执行新函数，修正this</span></span><br><span class="line">        <span class="keyword">return</span> _self.apply( <span class="built_in">this</span>, <span class="built_in">arguments</span>); <span class="comment">//执行原函数</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">Function</span>.prototype.after = <span class="function"><span class="keyword">function</span>(<span class="params">afterfn</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> _self = <span class="built_in">this</span>; <span class="comment">//保存原函数的引用</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">//返回包含了原函数和新函数的“代理”函数</span></span><br><span class="line">        <span class="keyword">var</span> ret = _self.apply( <span class="built_in">this</span>, <span class="built_in">arguments</span> ); <span class="comment">//执行原函数</span></span><br><span class="line">        afterfn.apply( <span class="built_in">this</span>, <span class="built_in">arguments</span> ); <span class="comment">//执行新函数，修正this</span></span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="调用例子"><a href="#调用例子" class="headerlink" title="调用例子"></a>调用例子</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> example = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;example函数执行:&quot;</span>,<span class="number">2</span>);</span><br><span class="line">&#125;;</span><br><span class="line">example = example.before(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;example函数执行之前:&quot;</span>,<span class="number">1</span>);</span><br><span class="line">&#125;).after(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;example函数执行之后:&quot;</span>,<span class="number">3</span>);</span><br><span class="line">&#125;);</span><br><span class="line">example();</span><br></pre></td></tr></table></figure>
+
+<h3 id="执行结果"><a href="#执行结果" class="headerlink" title="执行结果"></a>执行结果</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">example函数执行之前: 1</span><br><span class="line">example函数执行: 2</span><br><span class="line">example函数执行之后: 3</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/29/Javascript%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0AOP%E5%8A%9F%E8%83%BD/" data-id="ckdfkvozm0000wdrv97q60sg0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Front-End/">Front-End</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Plugins/" rel="tag">Plugins</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Plugins/" style="font-size: 10px;">Plugins</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/03/29/jQuery-Validate-%E9%AA%8C%E8%AF%81%E9%9B%86%E5%90%88/">jQuery Validate 验证集合</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/29/Javascript%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0AOP%E5%8A%9F%E8%83%BD/">Javascript高阶函数AOP功能</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
